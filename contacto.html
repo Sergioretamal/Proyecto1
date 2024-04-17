@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+    <div class="container">
+        <div class="row"><!--cabecera pagina-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="IMG/logo.png" alt="logo" width="150" height="80">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link h5 text-center" href="#">Teatro Regional</a>
+                      <a class="nav-link h5 text-center" href="#">Centro Cultural</a>
+                      <a class="nav-link h5 text-center" href="#">Contacto</a>
+                      <a class="nav-link h5 text-center" href="#">Buzón de Sugerencias</a>
+                    </div>
+                    <div class="input-group">
+                        <i class="input-group-text bi-search"></i>
+                        <input type="text" class="form-control" name="txtbuscar" 
+                                            id="txtbuscar" placeholder="Ingrese texto a buscar">
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+        <div class="row">
+            <form action="destino" method="post">
+                    <div class="col">
+                        <label for="txtNombre">Nombre:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bi bi-universal-access"></span>
+                            <input type="nombre" class="form-control" name="txtNombre" id="textNombre" required>
+                        </div>
+                    <div class="col">
+                        <label for="txtEmail">EMAIL:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bi bi-envelope-arrow-down-fill"></span>
+                            <input type="email" class="form-control" name="txtEmail" id="textEmail" required>
+                        </div>
+                    <div class="col">
+                        <label for="txtComentario">COMENTARIO:</label>
+                        <div class="input-group">
+                            <span class="input-group-text bi bi-chat"></span>
+                            <input type="comentario" class="form-control" name="txtComentario" id="textComentario" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+
+</html>
